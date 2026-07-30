@@ -1,4 +1,4 @@
-import type { Course, Stat, Testimonial, Vehicle, FAQItemData, BlogPost } from '../types';
+import type { Course, Stat, Testimonial, Vehicle, FAQItemData } from '../types';
 
 export const COURSES_DATA: Course[] = [
   {

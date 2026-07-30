@@ -18,8 +18,9 @@ import { MobileCallBar } from './components/layout/MobileCallBar';
 import { Preloader } from './components/widgets/Preloader';
 
 import { VehiclesGallery } from './components/sections/VehiculesGallery';
-import Footer from './components/layout/Footer';
+
 import WhatsAppButton from './components/widgets/WhatsappButton';
+import { Footer } from './components/layout/Footer';
 
 export function App() {
   return (

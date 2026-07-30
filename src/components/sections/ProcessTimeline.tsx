@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion';
 import { SectionTitle } from '../ui/SectionTitle';
-import { UserCheck, BookOpen, Car, Award, CheckCircle } from 'lucide-react';
+import { UserCheck, BookOpen, Car, Award } from 'lucide-react';
 
 export const ProcessTimeline: React.FC = () => {
   const steps = [

@@ -28,7 +28,7 @@ export const ContactSection: React.FC = () => {
     resolver: zodResolver(contactSchema)
   });
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = async () => {
     // Simuler l'envoi API
     await new Promise((res) => setTimeout(res, 1000));
     setSubmitted(true);
@@ -67,7 +67,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Téléphone</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">01 23 45 67 89</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">690461830</p>
                 </div>
               </div>
 
@@ -77,7 +77,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Email</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">contact@driveacademy.fr</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">frankamdev@gmail.fr</p>
                 </div>
               </div>
             </div>
