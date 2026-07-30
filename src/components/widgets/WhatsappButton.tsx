@@ -58,7 +58,7 @@ export default function WhatsAppButton() {
     if (isOpen && !hasGreeted) {
       setHasGreeted(true);
       pushBotMessage(
-        "Bonjour 👋 Bienvenue chez DriveAcademy ! Je suis votre conseiller virtuel. Quelle formation souhaitez-vous préparer ?",
+        "Bonjour 👋 Bienvenue chez ITGES ! Je suis votre conseiller virtuel. Quelle formation souhaitez-vous préparer ?",
         ["Tarifs & Formations", "S'inscrire à une session", "Horaires des cours", "Parler à un moniteur"]
       );
     }
@@ -75,14 +75,14 @@ export default function WhatsAppButton() {
         pushBotMessage(
           "Nous proposons le Permis B (Manuel & Automatique), le Permis Moto A2, et la Conduite Accompagnée. Souhaitez-vous recevoir la grille tarifaire détaillée sur WhatsApp ?",
           undefined,
-          { label: "Recevoir les tarifs sur WhatsApp", whatsappMessage: "Bonjour DriveAcademy, je souhaite obtenir les tarifs de vos formations." }
+          { label: "Recevoir les tarifs sur WhatsApp", whatsappMessage: "Bonjour ITGES, je souhaite obtenir les tarifs de vos formations." }
         );
         break;
       case "S'inscrire à une session":
         pushBotMessage(
           "Excellente initiative ! Nos prochaines sessions de code et de conduite démarrent bientôt. Finalisons votre dossier d'inscription directement avec l'équipe.",
           undefined,
-          { label: "Démarrer mon inscription sur WhatsApp", whatsappMessage: "Bonjour DriveAcademy, je souhaite m'inscrire à une formation au permis." }
+          { label: "Démarrer mon inscription sur WhatsApp", whatsappMessage: "Bonjour ITGES, je souhaite m'inscrire à une formation au permis." }
         );
         break;
       case "Horaires des cours":
@@ -95,7 +95,7 @@ export default function WhatsAppButton() {
         pushBotMessage(
           "Pas de souci ! Je vous met en relation directe avec un de nos moniteurs sur WhatsApp pour répondre à toutes vos questions.",
           undefined,
-          { label: "Ouvrir la discussion WhatsApp", whatsappMessage: "Bonjour DriveAcademy, j'aimerais échanger avec un moniteur." }
+          { label: "Ouvrir la discussion WhatsApp", whatsappMessage: "Bonjour ITGES, j'aimerais échanger avec un moniteur." }
         );
         break;
       default:
@@ -111,7 +111,7 @@ export default function WhatsAppButton() {
     pushBotMessage(
       "Merci pour votre message ! Pour vous apporter une réponse personnalisée dans les plus brefs délais, poursuivons sur WhatsApp.",
       undefined,
-      { label: "Continuer sur WhatsApp", whatsappMessage: `Bonjour DriveAcademy, ${userText}` }
+      { label: "Continuer sur WhatsApp", whatsappMessage: `Bonjour ITGES, ${userText}` }
     );
   };
 
@@ -160,7 +160,7 @@ export default function WhatsAppButton() {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="font-bold truncate text-base">
-                  Drive<span className="text-orange-500">Academy</span>
+                  IT<span className="text-orange-500">GES</span>
                 </p>
                 <p className="text-xs text-slate-400 flex items-center gap-1.5">
                   <span className="relative flex h-2 w-2">
