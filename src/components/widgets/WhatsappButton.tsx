@@ -120,7 +120,7 @@ export default function WhatsAppButton() {
       {/* Bouton Flottant (Orange DriveAcademy) */}
       <motion.button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300"
+        className="fixed bottom-6 right-317 z-50 w-16 h-16 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-2xl flex items-center justify-center transition-all duration-300"
         aria-label="Ouvrir le chat WhatsApp"
         animate={{ y: [0, -8, 0] }}
         transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
