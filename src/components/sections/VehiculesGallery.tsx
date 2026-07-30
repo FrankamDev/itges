@@ -4,6 +4,8 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { VEHICLES_DATA } from '../../data/mockData';
 import {  } from 'react-icons';
 import { Car, Fuel } from 'lucide-react';
+import { Footer } from '../layout/Footer';
+import { Navbar } from '../layout/Navbar';
 
 export const VehiclesGallery: React.FC = () => {
   const [filter, setFilter] = useState<'All' | 'Car' | 'Motorcycle'>('All');
@@ -13,6 +15,7 @@ export const VehiclesGallery: React.FC = () => {
     : VEHICLES_DATA.filter(v => v.type === filter);
 
   return (
+    <>
     <section id="vehicles" className="py-24 bg-slate-50 dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
@@ -20,7 +23,7 @@ export const VehiclesGallery: React.FC = () => {
           title="Des véhicules modernes & récents"
           description="Conduisez dans des conditions optimales de confort et de sécurité avec notre parc automobile 2024."
         />
-
+<Navbar/>
         {/* Boutons Filtrage */}
         <div className="flex justify-center gap-4 mb-12">
           {(['All', 'Car', 'Motorcycle'] as const).map((type) => (
@@ -74,5 +77,7 @@ export const VehiclesGallery: React.FC = () => {
         </div>
       </div>
     </section>
+    <Footer/>
+    </>
   );
 };

@@ -1,20 +1,21 @@
 import React from "react";
 import { Car } from "lucide-react";
+import Icon3D from "../ui/Icon3D";
 
 export const Footer: React.FC = () => {
   // Tableau avec les vrais composants d'icônes
-  const socialIcons = [
-    { icon: "Facebook", href: "#" },
-    { icon: "Instagram", href: "#" },
-    { icon: "Twitter", href: "#" },
-    { icon: "Linkedin", href: "#" },
-  ];
+  // const socialIcons = [
+  //   { icon: "Facebook", href: "#" },
+  //   { icon: "Instagram", href: "#" },
+  //   { icon: "Twitter", href: "#" },
+  //   { icon: "Linkedin", href: "#" },
+  // ];
 
   return (
     <footer className="bg-slate-900 text-slate-300 border-t border-slate-800 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-          {/* Col 1 - Info marque */}
+        
           <div className="lg:col-span-2 space-y-4">
             <a href="#" className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white">
@@ -29,18 +30,7 @@ export const Footer: React.FC = () => {
               encadrement humain et une application en ligne dédiée.
             </p>
             <div className="flex gap-3 pt-2">
-              {socialIcons.map((item, idx) => {
-                const IconComponent = item.icon;
-                return (
-                  <a
-                    key={idx}
-                    href={item.href}
-                    className="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-400 hover:text-orange-500 hover:bg-slate-700 transition-colors"
-                  >
-                    <IconComponent  />
-                  </a>
-                );
-              })}
+              <Icon3D />
             </div>
           </div>
 
@@ -97,7 +87,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#process"
+                  href="/process"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Notre méthode
@@ -105,7 +95,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#faq"
+                  href="/faq"
                   className="hover:text-orange-400 transition-colors"
                 >
                   FAQ
@@ -113,7 +103,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Contact
@@ -127,7 +117,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-white font-bold mb-4">Légal</h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <a href="#" className="hover:text-orange-400 transition-colors">
+                <a href="/" className="hover:text-orange-400 transition-colors">
                   Mentions Légales
                 </a>
               </li>
