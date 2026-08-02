@@ -1,5 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 // import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import { BackToTop, ScrollProgress } from "./components/ui/ScrollProgress";
@@ -26,17 +24,16 @@ function HomePage() {
     <>
       <Preloader />
 
-      <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-orange-500 selection:text-white dark:bg-slate-950 dark:text-slate-100">
-        
-          <title>
-            DriveAcademy | Auto-École Haute Gamme & Formation Permis
-          </title>
+      <div
+        id="top"
+        className="min-h-screen bg-slate-50 text-slate-900 selection:bg-orange-500 selection:text-white dark:bg-slate-950 dark:text-slate-100"
+      >
+        <title>DriveAcademy | Auto-École Haute Gamme & Formation Permis</title>
 
-          <meta
-            name="description"
-            content="Passez votre permis de conduire rapidement avec DriveAcademy. Formation accélérée, permis A/B, moniteurs agréés et financement CPF."
-          />
-        
+        <meta
+          name="description"
+          content="Passez votre permis de conduire rapidement avec DriveAcademy. Formation accélérée, permis A/B, moniteurs agréés et financement CPF."
+        />
 
         <ScrollProgress />
         <BackToTop />
@@ -64,17 +61,5 @@ function HomePage() {
 }
 
 export default function App() {
-  return (
-    // <HelmetProvider>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/why-us" element={<WhyUs />} />
-        <Route path="/vehicule" element={<VehiclesGallery />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-      </Routes>
-    </BrowserRouter>
-    // </HelmetProvider>
-  );
+  return <HomePage />;
 }

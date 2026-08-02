@@ -15,7 +15,6 @@ export const Footer: React.FC = () => {
     <footer className="bg-slate-900 text-slate-300 border-t border-slate-800 pt-16 pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-        
           <div className="lg:col-span-2 space-y-4">
             <a href="#" className="flex items-center gap-2.5">
               <div className="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white">
@@ -56,7 +55,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/courses"
+                  href="#courses"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Conduite Accompagnée
@@ -64,7 +63,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/courses"
+                  href="#courses"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Stage Accéléré
@@ -87,7 +86,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/process"
+                  href="#process"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Notre méthode
@@ -95,7 +94,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/faq"
+                  href="#faq"
                   className="hover:text-orange-400 transition-colors"
                 >
                   FAQ
@@ -103,7 +102,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="#contact"
                   className="hover:text-orange-400 transition-colors"
                 >
                   Contact
@@ -148,5 +147,3 @@ export const Footer: React.FC = () => {
     </footer>
   );
 };
-
-
