@@ -26,7 +26,7 @@ export const Preloader: React.FC = () => {
             <Car className="w-8 h-8 text-white" />
           </motion.div>
           <h2 className="text-2xl font-black tracking-wider">
-            Drive<span className="text-orange-500">Academy</span>
+            IT<span className="text-orange-500">GES</span>
           </h2>
         </motion.div>
       )}

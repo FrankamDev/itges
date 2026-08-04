@@ -5,6 +5,8 @@ import { z } from 'zod';
 import { SectionTitle } from '../ui/SectionTitle';
 import { Button } from '../ui/Button';
 import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { Footer } from '../layout/Footer';
+import { Navbar } from '../layout/Navbar';
 
 const contactSchema = z.object({
   fullName: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
@@ -37,6 +39,8 @@ export const ContactSection: React.FC = () => {
   };
 
   return (
+    <>
+    
     <section id="contact" className="py-24 bg-white dark:bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionTitle
@@ -44,7 +48,7 @@ export const ContactSection: React.FC = () => {
           title="Prenez rendez-vous ou posez vos questions"
           description="Notre équipe est disponible pour vous guider dans le choix de votre formation."
         />
-
+        <Navbar/>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-12">
           {/* Infos de Contact */}
           <div className="lg:col-span-5 space-y-6">
@@ -57,7 +61,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Adresse</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">123 Avenue des Champs-Élysées, 75008 Paris</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">Cameroun, Yaoundé</p>
                 </div>
               </div>
 
@@ -67,7 +71,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Téléphone</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">690461830</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">690 46 18 30</p>
                 </div>
               </div>
 
@@ -77,7 +81,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 dark:text-white text-sm">Email</h4>
-                  <p className="text-sm text-slate-600 dark:text-slate-400">frankamdev@gmail.fr</p>
+                  <p className="text-sm text-slate-600 dark:text-slate-400">frankamdev@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -99,7 +103,7 @@ export const ContactSection: React.FC = () => {
                   <input
                     {...register('fullName')}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                    placeholder="Jean Dupont"
+                    placeholder="ex: Frank Kamgang"
                   />
                   {errors.fullName && <p className="text-xs text-red-500 mt-1">{errors.fullName.message}</p>}
                 </div>
@@ -110,7 +114,7 @@ export const ContactSection: React.FC = () => {
                     {...register('email')}
                     type="email"
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                    placeholder="jean@example.com"
+                    placeholder="ex: frankamdev.com"
                   />
                   {errors.email && <p className="text-xs text-red-500 mt-1">{errors.email.message}</p>}
                 </div>
@@ -122,7 +126,7 @@ export const ContactSection: React.FC = () => {
                   <input
                     {...register('phone')}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500"
-                    placeholder="06 12 34 56 78"
+                    placeholder="690 46 18 30"
                   />
                   {errors.phone && <p className="text-xs text-red-500 mt-1">{errors.phone.message}</p>}
                 </div>
@@ -162,5 +166,7 @@ export const ContactSection: React.FC = () => {
         </div>
       </div>
     </section>
+    {/* <Footer /> */}
+    </>
   );
 };

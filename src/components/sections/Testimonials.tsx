@@ -55,7 +55,7 @@ export const Testimonials: React.FC = () => {
         </div>
       </div>
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 };

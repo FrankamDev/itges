@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { SectionTitle } from "../ui/SectionTitle";
 import { FAQ_DATA } from "../../data/mockData";
 import { ChevronDown } from "lucide-react";
-import { Footer } from "../layout/Footer";
 import { Navbar } from "../layout/Navbar";
 
 export const FAQ: React.FC = () => {
@@ -64,7 +63,7 @@ export const FAQ: React.FC = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

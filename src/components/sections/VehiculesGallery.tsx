@@ -77,7 +77,7 @@ export const VehiclesGallery: React.FC = () => {
         </div>
       </div>
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 };

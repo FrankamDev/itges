@@ -4,6 +4,7 @@ import { Menu, X, Car, Phone } from "lucide-react";
 import { ThemeToggle } from "../ui/ThemeToggle";
 import { Button } from "../ui/Button";
 
+
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,14 +16,14 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: "Accueil", href: "#top" },
-    { name: "Avantages", href: "#why-us" },
-    { name: "Formations", href: "#courses" },
-    { name: "Parcours", href: "#process" },
-    { name: "Véhicules", href: "#vehicles" },
-    { name: "Avis", href: "#testimonials" },
-    { name: "FAQ", href: "#faq" },
-    { name: "Contact", href: "#contact" },
+    { name: "Accueil", href: "/" },
+    { name: "Avantages", href: "/why-us" },
+    { name: "Formations", href: "/courses" },
+    { name: "Parcours", href: "/process" },
+    { name: "Véhicules", href: "/vehicles" },
+    { name: "Avis", href: "testimonials" },
+    { name: "FAQ", href: "/faq" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -35,7 +36,7 @@ export const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2.5 group">
+        <a href="/" className="flex items-center gap-2.5 group">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
             <Car className="w-6 h-6" />
           </div>

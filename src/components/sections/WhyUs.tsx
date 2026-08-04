@@ -11,6 +11,7 @@ import {
 import { Navbar } from "../layout/Navbar";
 import { Footer } from "../layout/Footer";
 
+
 export const WhyUs: React.FC = () => {
   const features = [
     {
@@ -100,7 +101,7 @@ export const WhyUs: React.FC = () => {
           </div>
         </div>
       </section>
-      <Footer />
+      {/* <Footer/> */}
     </>
   );
 };
