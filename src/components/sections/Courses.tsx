@@ -5,7 +5,6 @@ import { COURSES_DATA } from "../../data/mockData";
 import { Button } from "../ui/Button";
 import { Badge } from "../ui/Badge";
 import { Check, Clock, ArrowRight } from "lucide-react";
-import { Footer } from "../layout/Footer";
 import { Navbar } from "../layout/Navbar";
 
 export const Courses: React.FC = () => {
@@ -115,7 +114,7 @@ export const Courses: React.FC = () => {
                         À partir de
                       </span>
                       <span className="text-3xl font-black text-slate-900 dark:text-white">
-                        {course.price} €
+                        {course.price} FCFA
                       </span>
                     </div>
                     <Button

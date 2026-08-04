@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Award, Star } from 'lucide-react';
+import {  ShieldCheck, Award, Star} from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const Hero: React.FC = () => {
@@ -34,9 +34,9 @@ export const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <Button size="lg" icon={<ArrowRight className="w-5 h-5" />}>
+              <a href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-full transition-colors duration-300">
                 S'inscrire maintenant
-              </Button>
+              </a>
               <Button variant="outline" size="lg">
                 Découvrir nos offres
               </Button>

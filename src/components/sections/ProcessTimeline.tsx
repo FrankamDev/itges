@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "../ui/SectionTitle";
 import { UserCheck, BookOpen, Car, Award } from "lucide-react";
 import { Navbar } from "../layout/Navbar";
-import { Footer } from "../layout/Footer";
 
 export const ProcessTimeline: React.FC = () => {
   const steps = [

@@ -4,7 +4,6 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { TESTIMONIALS_DATA } from '../../data/mockData';
 import { Star, Quote } from 'lucide-react';
 import { Navbar } from '../layout/Navbar';
-import { Footer } from '../layout/Footer';
 
 export const Testimonials: React.FC = () => {
   return (

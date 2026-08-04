@@ -3,7 +3,6 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { STATS_DATA } from "../../data/mockData";
 
-// Sécurité pour la compatibilité d'import CJS/ESM
 const CountUpComponent =
   (CountUp as unknown as { default: typeof CountUp }).default || CountUp;
 

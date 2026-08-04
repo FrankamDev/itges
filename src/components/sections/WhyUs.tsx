@@ -9,7 +9,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Navbar } from "../layout/Navbar";
-import { Footer } from "../layout/Footer";
 
 
 export const WhyUs: React.FC = () => {

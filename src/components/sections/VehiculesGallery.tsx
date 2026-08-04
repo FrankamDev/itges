@@ -4,7 +4,6 @@ import { SectionTitle } from '../ui/SectionTitle';
 import { VEHICLES_DATA } from '../../data/mockData';
 import {  } from 'react-icons';
 import { Car, Fuel } from 'lucide-react';
-import { Footer } from '../layout/Footer';
 import { Navbar } from '../layout/Navbar';
 
 export const VehiclesGallery: React.FC = () => {
